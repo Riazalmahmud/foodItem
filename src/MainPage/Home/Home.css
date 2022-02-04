@@ -24,8 +24,65 @@
   padding: 26px;
   margin: 0px auto;
 }
-
-.service-title {
+.popular-title h1 {
+  text-align: center;
 }
-.service-style p {
+.popular-product {
+  background-image: url("../../image/product/pop_smoothie_04-720x1030.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+}
+.popular-product02 {
+  background-image: url("../../image/product/pop_smoothie_01-720x1030.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+}
+.popular-product03 {
+  background-image: url("../../image/product/pop_smoothie_02-720x1030.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+}
+.popular-product04 {
+  background-image: url("../../image/product/pop_smoothie_03-720x1030.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+}
+/* #popular-product-rgba {
+  background-color: rgba(255, 0, 0, 0.3);
+} */
+.popular-product img {
+  position: relative;
+}
+.product-info {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  margin: 274px 0px 0px 39px;
+}
+
+.product-info p {
+  font-size: 14px;
+}
+
+/* organic-food */
+.organic-food-style {
+  margin-top: 300px;
+}
+.organic-food {
+  background-color: #57910b;
+  height: 350px;
+}
+.organic-food img {
+  max-width: 100%;
+  height: auto;
+  margin-top: -300px;
+  background: transparent;
 }
