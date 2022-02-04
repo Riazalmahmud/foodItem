@@ -5,6 +5,11 @@ import fruits from "../../image/01_fruits-280x355.jpg";
 import vegetables from "../../image/02_vegetables-280x355.jpg";
 import nuts from "../../image/04_nuts-280x355.jpg";
 import berries from "../../image/03_berries-280x355.jpg";
+import Cheeseburger from "../../image/product/item_03-480x480.jpg";
+import royal_cheeseburger from "../../image/product/item_04-480x480.jpg";
+import gambugrer from "../../image/product/item_02-480x480.jpg";
+import hamburger from "../../image/product/item_01-480x480.jpg";
+
 import "./Home.css";
 import { GiBurningTree } from "react-icons/gi";
 import { BiDish } from "react-icons/bi";
@@ -167,7 +172,7 @@ const Home = () => {
       <div class="container-fluid organic-section-main">
         <div class="container organic-section-style">
           <h1 className="healthy-title text-center">
-            We use only <span>organic products</span> grown on private farms,
+            We use only <span>organic products grown </span> on private farms,
             without nitrates and additives
           </h1>
           <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 pt-3 mt-3">
@@ -241,8 +246,105 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* container section end */}
       </div>
+
+      {/* Popular section end */}
+      <div class="container-fluid ">
+        <div class="container organic-section-style">
+          <h1 className="healthy-title text-center">Popular Goods</h1>
+          <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 pt-3 mt-3">
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="p-3  organic-section  popular-food ">
+                <img
+                  className="img-fluid image-size-fix"
+                  src={Cheeseburger}
+                  alt=""
+                  width={"250px"}
+                  height={"250px"}
+                />
+              </div>
+              <div className="organic-title">
+                <h5 className="service-title">Cheeseburger with Salad</h5>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  …
+                </p>
+                <h6 className="fw-bold text-dark"> $ 12</h6>
+                <button type="button" className="btn btn-danger fw-bold ">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="p-3  organic-section  popular-food">
+                <img
+                  className="img-fluid image-size-fix"
+                  src={royal_cheeseburger}
+                  alt=""
+                  width={"250px"}
+                  height={"250px"}
+                />
+              </div>
+              <div className="organic-title">
+                <h5 className="service-title">Royal Cheeseburger with Bacon</h5>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  …
+                </p>
+                <h6 className="fw-bold text-dark"> $ 14</h6>
+                <button type="button" className="btn btn-danger fw-bold ">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="p-3  organic-section  popular-food">
+                <img
+                  className="img-fluid image-size-fix"
+                  src={gambugrer}
+                  alt=""
+                  width={"250px"}
+                  height={"250px"}
+                />
+              </div>
+              <div className="organic-title">
+                <h5 className="service-title">Black Gambugrer with Fishcake</h5>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  …
+                </p>
+                <h6 className="fw-bold text-dark"> $ 16</h6>
+                <button type="button" className="btn btn-danger fw-bold ">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="p-3  organic-section  popular-food">
+                <img
+                  className="img-fluid image-size-fix"
+                  src={hamburger}
+                  alt=""
+                  width={"250px"}
+                  height={"250px"}
+                />
+              </div>
+              <div className="organic-title">
+                <h5 className="service-title">Classic Bacon Hamburger</h5>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus naror sit voluptatem
+                  …
+                </p>
+                <h6 className="fw-bold text-dark"> $ 12.99</h6>
+                <button type="button" className="btn btn-danger fw-bold ">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Popular section end */}
     </div>
   );
 };

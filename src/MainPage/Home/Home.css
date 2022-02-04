@@ -84,7 +84,7 @@
 .organic-section-main {
   background: #e4ecda;
   margin-top: -22px;
-  height: 650px;
+  height: 700px;
   overflow: hidden;
 }
 .organic-food img {
@@ -109,4 +109,9 @@
 }
 .organic-title {
   margin-top: 20px;
+}
+/*-------------------- popular-food------------------------ */
+.popular-food img {
+  width: 250px;
+  height: 250px;
 }
