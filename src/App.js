@@ -5,6 +5,7 @@ import Home from "./MainPage/Home/Home.js";
 import About from "./MainPage/About/About";
 import Login from "./SharePage/Login/Login";
 import Header from "./SharePage/Login/Header/Header.js";
+import Footer from "./SharePage/Footer/Footer.js";
 function App() {
   return (
     <div className="App">
@@ -17,10 +18,12 @@ function App() {
           <Route path="/users">
             <Login />
           </Route>
+
           <Route path="/">
             <Home />
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   );

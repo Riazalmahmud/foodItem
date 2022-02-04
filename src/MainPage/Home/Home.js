@@ -15,6 +15,7 @@ import { GiBurningTree } from "react-icons/gi";
 import { BiDish } from "react-icons/bi";
 import { GoPackage } from "react-icons/go";
 import { BsCupStraw } from "react-icons/bs";
+import Testimonial from "../../SharePage/Testimonial/Testimonial.js";
 const Home = () => {
   return (
     <div>
@@ -345,6 +346,12 @@ const Home = () => {
         </div>
       </div>
       {/* Popular section end */}
+
+      <div className="container">
+        <h6 className="healthy-title text-center">Testimonials</h6>
+        <h1 className="pt-3 fw-bold">Why Our Clients Choose Us?</h1>
+        <Testimonial></Testimonial>
+      </div>
     </div>
   );
 };
