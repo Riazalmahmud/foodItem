@@ -75,14 +75,38 @@
 /* organic-food */
 .organic-food-style {
   margin-top: 300px;
-}
-.organic-food {
   background-color: #57910b;
   height: 350px;
+}
+/* .organic-food {
+ 
+} */
+.organic-section-main {
+  background: #e4ecda;
+  margin-top: -22px;
+  height: 650px;
+  overflow: hidden;
 }
 .organic-food img {
   max-width: 100%;
   height: auto;
   margin-top: -300px;
   background: transparent;
+}
+.organic-section {
+  width: 240px;
+  height: 240px;
+}
+.organic-section-style {
+  margin: 167px 0;
+}
+
+.organic-section img {
+  width: 200px;
+  height: 200px;
+  padding: 2px;
+  margin: 2px;
+}
+.organic-title {
+  margin-top: 20px;
 }

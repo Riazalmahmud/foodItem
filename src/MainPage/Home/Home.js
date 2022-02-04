@@ -1,7 +1,10 @@
 import React from "react";
 import health from "../../image/service/health-bottle-cut.jpg";
-import pop_smoothie_04 from "../../image/product/pop_smoothie_04-720x1030.jpg";
 import avocado from "../../image/product/avocado.png";
+import fruits from "../../image/01_fruits-280x355.jpg";
+import vegetables from "../../image/02_vegetables-280x355.jpg";
+import nuts from "../../image/04_nuts-280x355.jpg";
+import berries from "../../image/03_berries-280x355.jpg";
 import "./Home.css";
 import { GiBurningTree } from "react-icons/gi";
 import { BiDish } from "react-icons/bi";
@@ -161,29 +164,85 @@ const Home = () => {
         </div>
       </div>
       {/* container organic section start */}
-      <div class="container my-5 py-5">
-        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-          <div class="col-lg-3 col-md-3 col-6">
-            <div class="p-3 border bg-light">
-              Row col-lg-3 col-md-3 col-6umn
+      <div class="container-fluid organic-section-main">
+        <div class="container organic-section-style">
+          <h1 className="healthy-title text-center">
+            We use only <span>organic products</span> grown on private farms,
+            without nitrates and additives
+          </h1>
+          <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 pt-3 mt-3">
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="p-3 border bg-light organic-section rounded-circle ">
+                <img
+                  className="img-fluid image-size-fix rounded-circle"
+                  src={fruits}
+                  alt=""
+                  width={"250px"}
+                  height={"250px"}
+                />
+              </div>
+              <div className="organic-title">
+                <h5 className="service-title">Only natural food</h5>
+                <p>
+                  Nam malesuada eros nec luctus laoreet fusce sodales consequat
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-6">
-            <div class="p-3 border bg-light">
-              Row col-lg-3 col-md-3 col-6umn
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="p-3 border bg-light organic-section rounded-circle ">
+                <img
+                  className="img-fluid image-size-fix rounded-circle"
+                  src={vegetables}
+                  alt=""
+                  width={"250px"}
+                  height={"250px"}
+                />
+              </div>
+              <div className="organic-title">
+                <h5 className="service-title">Vegetables</h5>
+                <p>
+                  Donec ultricies gravida ex non rhoncus donec pulvinar leo eu.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-6">
-            <div class="p-3 border bg-light">
-              Row col-lg-3 col-md-3 col-6umn
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="p-3 border bg-light organic-section rounded-circle ">
+                <img
+                  className="img-fluid image-size-fix rounded-circle"
+                  src={nuts}
+                  alt=""
+                  width={"250px"}
+                  height={"250px"}
+                />
+              </div>
+              <div className="organic-title">
+                <h5 className="service-title">Nuts and Greens</h5>
+                <p>
+                  Aliquam fermentum nisl et leo congue sollicitudin placerat
+                  ante vitae.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-6">
-            <div class="p-3 border bg-light">Row column</div>
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="p-3 border bg-light organic-section rounded-circle ">
+                <img
+                  className="img-fluid image-size-fix rounded-circle"
+                  src={berries}
+                  alt=""
+                />
+              </div>
+              <div className="organic-title">
+                <h5 className="service-title">Organic Berries</h5>
+                <p>
+                  Maecenas metus arcu, lacinia nec magna vel, ultrices aliquet
+                  justo.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+        {/* container section end */}
       </div>
-      {/* container section end */}
     </div>
   );
 };
