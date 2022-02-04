@@ -16,10 +16,12 @@ import { BiDish } from "react-icons/bi";
 import { GoPackage } from "react-icons/go";
 import { BsCupStraw } from "react-icons/bs";
 import Testimonial from "../../SharePage/Testimonial/Testimonial.js";
+import HeaderSlider from "../../SharePage/Slider/HeaderSlider.js";
 const Home = () => {
   return (
     <div>
       {/* Healthy and tasty foods */}
+      <HeaderSlider></HeaderSlider>
       <div className="container my-5 py-5">
         <div className="row">
           <div className="col-lg-6 col-md-6 col-12 healthy-style">

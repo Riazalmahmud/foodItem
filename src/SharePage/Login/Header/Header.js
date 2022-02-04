@@ -12,7 +12,6 @@ import {
 import { FaUserAlt } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 import brandLogo from "../../../image/Brand.png";
-import HeaderSlider from "./../../Slider/HeaderSlider";
 
 const Header = () => {
   return (
@@ -25,7 +24,7 @@ const Header = () => {
                 <p className="low-green-text">
                   <GoLocation />
                   <span className="text-dark top-text-slogan">
-                    Riaz Hosen,sodar,Noakhali,Bangladesh
+                    Riaz Hossen,sodar,Noakhali,Bangladesh
                   </span>
                 </p>
               </Navbar.Brand>
@@ -114,7 +113,6 @@ const Header = () => {
         </div>
 
         {/* slider section */}
-        <HeaderSlider></HeaderSlider>
       </div>
     </div>
   );
