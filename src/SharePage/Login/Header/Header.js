@@ -12,6 +12,7 @@ import {
 import { FaUserAlt } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 import brandLogo from "../../../image/Brand.png";
+import HeaderSlider from "./../../Slider/HeaderSlider";
 
 const Header = () => {
   return (
@@ -111,6 +112,9 @@ const Header = () => {
             </Container>
           </Navbar>
         </div>
+
+        {/* slider section */}
+        <HeaderSlider></HeaderSlider>
       </div>
     </div>
   );
