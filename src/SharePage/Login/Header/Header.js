@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { GoLocation } from "react-icons/go";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import {
@@ -12,8 +12,10 @@ import {
 import { FaUserAlt } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 import brandLogo from "../../../image/Brand.png";
-
+import { Link } from "react-router-dom";
+import useAuth from "../../../context/AuthProvider/useAuth.js";
 const Header = () => {
+  const { user, logOut } = useAuth();
   return (
     <div>
       <div className="container-fluid bg-light border border-1">
@@ -96,11 +98,27 @@ const Header = () => {
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="m-auto text-dark">
-                  <Nav.Link href="#features">Home</Nav.Link>
-                  <Nav.Link href="#pricing">About</Nav.Link>
-                  <Nav.Link href="#pricing">Blog</Nav.Link>
-                  <Nav.Link href="#pricing">Contact</Nav.Link>
-                  <Nav.Link href="#pricing">login</Nav.Link>
+                  <Nav.Link as={Link} to="/home">
+                    Home
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/About">
+                    About
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/Blog">
+                    Blog
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/Contact">
+                    Contact
+                  </Nav.Link>
+                  {user?.email ? (
+                    <Button variant="danger" onClick={logOut}>
+                      logOut
+                    </Button>
+                  ) : (
+                    <Nav.Link as={Link} to="/login">
+                      login
+                    </Nav.Link>
+                  )}
                 </Nav>
                 <Nav>
                   <Nav.Link href="#deets" className="getmenu">
